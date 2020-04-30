@@ -1,0 +1,96 @@
+
+@media (min-width:600px) {
+    body {
+        font-size: 16;
+    }
+}
+
+@media (max-width:599px) {
+    body {
+        font-size: 12;
+    }
+}
+
+$textColour: rgb(50, 23, 173);
+
+body {
+
+    background-color: rgb(254, 255, 190);
+    color:$textColour;
+    
+    margin-left: 10px;
+    width: 95%;
+
+    div {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        p {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.pageTitles {
+    text-align: center;
+    color: #512920 ;
+}
+
+ th , td {
+          border: 1px solid black;
+          padding: 5px;
+          color: black;
+          border-collapse: collapse;
+          text-align: center;
+ }
+ 
+ #navigation {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        line-height: 0px;
+        margin:0px;
+  }
+
+  div.firstDiv  {
+        margin-top: 50px;
+ }
+
+ #joblist 
+    {
+        margin-top: 20px;
+        text-indent: initial;
+
+        li {
+             font-weight: bold;
+        }
+
+        ul li {
+             font-weight:normal;
+             font-weight: small;
+         }
+ }
+  
+  %picture {
+      margin: 20px;
+  }
+
+  .tankpic {
+    @extend %picture;
+    width: 30%;
+    margin-left: 33%;
+}
+
+  .travelPic {
+      @extend %picture;
+      width: 80%;
+  }
+
+  .travelPic:hover {
+      transform: scale(2.5);
+      position: relative;
+      z-index: 1;
+      max-width: 80%;
+      @media (max-width:599px) {
+          transform: scale(1);
+      }
+  }

@@ -1,0 +1,87 @@
+@media (min-width: 600px) {
+  body {
+    font-size: 16;
+  }
+}
+@media (max-width: 599px) {
+  body {
+    font-size: 12;
+  }
+}
+body {
+  background-color: #feffbe;
+  color: #3217ad;
+  margin-left: 10px;
+  width: 95%;
+}
+body div {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body div p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.pageTitles {
+  text-align: center;
+  color: #512920;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  color: black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#navigation {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  line-height: 0px;
+  margin: 0px;
+}
+
+div.firstDiv {
+  margin-top: 50px;
+}
+
+#joblist {
+  margin-top: 20px;
+  text-indent: initial;
+}
+#joblist li {
+  font-weight: bold;
+}
+#joblist ul li {
+  font-weight: normal;
+  font-weight: small;
+}
+
+.travelPic, .tankpic {
+  margin: 20px;
+}
+
+.tankpic {
+  width: 30%;
+  margin-left: 33%;
+}
+
+.travelPic {
+  width: 80%;
+}
+
+.travelPic:hover {
+  transform: scale(2.5);
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+}
+@media (max-width: 599px) {
+  .travelPic:hover {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=stylesh.css.map */
